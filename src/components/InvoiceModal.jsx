@@ -121,7 +121,7 @@ const InvoiceModal = ({
                     {currency} {subTotal}
                   </td>
                 </tr>
-                {taxAmount != 0.0 && (
+                {taxAmount !== 0.0 && (
                   <tr className="text-end">
                     <td></td>
                     <td className="fw-bold" style={{ width: "100px" }}>
@@ -132,7 +132,7 @@ const InvoiceModal = ({
                     </td>
                   </tr>
                 )}
-                {discountAmount != 0.0 && (
+                {discountAmount !== 0.0 && (
                   <tr className="text-end">
                     <td></td>
                     <td className="fw-bold" style={{ width: "100px" }}>

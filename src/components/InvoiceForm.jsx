@@ -12,7 +12,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 const InvoiceForm = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currency, setCurrency] = useState("$");
-  const [currentDate, setCurrentDate] = useState(
+  const [currentDate] = useState(
     new Date().toLocaleDateString()
   );
   const [invoiceNumber, setInvoiceNumber] = useState(1);
