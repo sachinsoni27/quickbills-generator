@@ -88,8 +88,6 @@ const InvoiceForm = () => {
   const onItemizedItemEdit = (evt) => {
     const { id, name, value } = evt.target;
 
-    console.log(id, name, value);
-
     const updatedItems = items.map((item) =>
       item.id === id ? { ...item, [name]: value } : item
     );
